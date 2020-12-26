@@ -109,16 +109,17 @@ module.exports = {
         // all routes that begin with `yoast` from fetch.
         // Whitelisted routes using glob patterns
         includedRoutes: [
-          "**/categories",
-          "**/posts",
-          "**/pages",
-          "**/media",
-          "**/tags",
-          "**/taxonomies",
-          "**/users",
+          "**/*/*/categories",
+          "**/*/*/posts",
+          "**/*/*/pages",
+          "**/*/*/media",
+          "**/*/*/tags",
+          "**/*/*/taxonomies",
+          "**/*/*/users",
+          "**/*/*/menus"
         ],
         // Blacklisted routes using glob patterns
-        excludedRoutes: ["**/posts/1456"],
+        excludedRoutes: [],
         // Set this to keep media sizes.
         // This option is particularly useful in case you need access to
         // URLs for thumbnails, or any other media detail.
